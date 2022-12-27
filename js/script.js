@@ -18,3 +18,6 @@ window.onscroll = () =>{
 }
 
 
+function gmail(){
+	alert('joao@soaresguimaraes.com.br');
+}

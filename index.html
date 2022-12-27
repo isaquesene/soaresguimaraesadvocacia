@@ -11,8 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!--Send Email-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("Dr27KtkUmqyuupc0A");
+        })();
+    </script>
+    <!--Fim Send Email-->
 
-    <title>Document</title>
+    <title>Soares Guimares</title>
 </head>
 <body>
     <!---header-->
@@ -35,12 +45,12 @@
             <h5>ADVOGADOS <span>ASSOCIADOS</span></h5>
             <P>Pronto para defender seus direitos.</P>
             <div class="social">
-                <a href=""><i class='bx bxl-facebook'></i></a>
-                <a href=""><i class='bx bxl-instagram'></i></a>
-                <a href=""><i class='bx bxl-google'></i></a>
-                <a href=""><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/soaresguimaraessolucoes/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/soaresguimaraes.advogados/"><i class='bx bxl-instagram'></i></a>
+                <a href="" onclick="gmail()"><i class='bx bxl-google'></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5512988846169&text=Como+podemos+Ajudar?"><i class='bx bxl-whatsapp'></i></a>
             </div>
-            <a href="#" class="btn">Fale Conosco</a>
+            <a href="#contact" class="btn">Fale Conosco</a>
         </div>
 
         <div class="home-img">
@@ -131,8 +141,8 @@
                 <form>
                     <input type="text" placeholder="Nome" id="nome">
                     <input type="phone" placeholder="Telefone" id="tel">
-                    <input type="e-mail" placeholder="E-mail" id="mail">
-                    <textarea name="" placeholder="Escreva uma Menssagem" id="" cols="30" rows="10"></textarea>
+                    <input type="e-mail" placeholder="E-mail" id="email">
+                    <textarea name="" placeholder="Escreva uma Menssagem" id="message" cols="30" rows="10"></textarea>
                     <button class="btn-contato">Enviar</button>
                 </form>
             </div>
@@ -147,5 +157,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
     <script src="js/scroll.js"></script>
+    <script src="js/email.js"></script>
 </body>
 </html>
